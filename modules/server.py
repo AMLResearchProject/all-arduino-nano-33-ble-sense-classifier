@@ -1,11 +1,17 @@
+#!/usr/bin/env python3
+""" Server/API class.
+
+Class for the classifier server/API.
+
 MIT License
 
-Copyright (c) 2021 Asociación de Investigacion en Inteligencia Artificial Para la Leucemia Peter Moss
+Copyright (c) 2021 Asociación de Investigacion en Inteligencia Artificial
+Para la Leucemia Peter Moss
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
+of this software and associated documentation files(the "Software"), to deal
 in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+to use, copy, modify, merge, publish, distribute, sublicense, and / or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
@@ -19,3 +25,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Contributors:
+- Adam Milton-Barker
+
+"""
+
+from modules.AbstractServer import AbstractServer
+
+class server(AbstractServer):
+	""" Server/API class.
+
+	Class for the classifier server/API.
+	"""
+
+	def predict(self, req):
+		""" Classifies an image sent via HTTP. """
+		pass
+
+	def start(self):
+		""" Starts the server. """
+		pass
