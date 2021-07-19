@@ -1,4 +1,4 @@
-""" HIAS AI Agent Helpers file.
+""" Helpers file.
 
 Configuration and logging functions.
 
@@ -21,7 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 Contributors:
-- Adam Milton-Barker - First version - 2021-5-1
+- Adam Milton-Barker
 
 """
 
@@ -38,7 +38,7 @@ from datetime import datetime
 class helpers():
 	""" Helper Class
 
-	HIAS AI Agent helper functions.
+	Configuration and logging functions.
 	"""
 
 	def __init__(self, ltype, log=True):

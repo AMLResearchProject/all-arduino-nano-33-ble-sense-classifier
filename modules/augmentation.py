@@ -1,12 +1,7 @@
 #!/usr/bin/env python3
-""" AI Model Data Augmentation Class.
+""" Data Augmentation Class.
 
 Provides data augmentation methods.
-
-MIT License
-
-Copyright (c) 2021 Asociación de Investigacion en Inteligencia Artificial
-Para la Leucemia Peter Moss
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files(the "Software"), to deal
@@ -31,10 +26,17 @@ Contributors:
 
 """
 
+import cv2
+import random
+
+import numpy as np
+
 from numpy.random import seed
+from scipy import ndimage
+from skimage import transform as tm
 
 class augmentation():
-	""" AI Model Data Augmentation Class
+	""" HIAS AI Model Data Augmentation Class
 
 	Provides data augmentation methods.
 	"""
@@ -51,28 +53,50 @@ class augmentation():
 
 	def grayscale(self, data):
 		""" Creates a grayscale copy. """
-		pass
+
+		gray = cv2.cvtColor(data, cv2.COLOR_BGR2GRAY)
+		return np.dstack([gray, gray, gray]).astype(np.float32)/255.
 
 	def equalize_hist(self, data):
 		""" Creates a histogram equalized copy. """
-		pass
+
+		img_to_yuv = cv2.cvtColor(data, cv2.COLOR_BGR2YUV)
+		img_to_yuv[:, :, 0] = cv2.equalizeHist(img_to_yuv[:, :, 0])
+		hist_equalization_result = cv2.cvtColor(img_to_yuv, cv2.COLOR_YUV2BGR)
+		return hist_equalization_result.astype(np.float32)/255.
 
 	def reflection(self, data):
 		""" Creates a reflected copy. """
-		pass
+
+		return cv2.flip(data, 0).astype(np.float32)/255., cv2.flip(data, 1).astype(np.float32)/255.
 
 	def gaussian(self, data):
 		""" Creates a gaussian blurred copy. """
-		pass
+
+		return ndimage.gaussian_filter(data, sigma=5.11).astype(np.float32)/255.
 
 	def translate(self, data):
 		""" Creates transformed copy. """
-		pass
 
-	def rotation(self, data, label, tdata, tlabels):
-		""" Creates rotated copies. """
-		pass
+		cols, rows, chs = data.shape
+
+		return cv2.warpAffine(data, np.float32([[1, 0, 84], [0, 1, 56]]), (rows, cols),
+							  borderMode=cv2.BORDER_CONSTANT, borderValue=(144, 159, 162)).astype(np.float32)/255.
+
+	def rotation(self, data):
+		""" Creates a rotated copy. """
+
+		cols, rows, chs = data.shape
+
+		rand_deg = random.randint(-180, 180)
+		matrix = cv2.getRotationMatrix2D((cols/2, rows/2), rand_deg, 0.70)
+		rotated = cv2.warpAffine(data, matrix, (rows, cols), borderMode=cv2.BORDER_CONSTANT,
+								borderValue=(144, 159, 162))
+
+		return rotated.astype(np.float32)/255.
 
 	def shear(self, data):
-		""" Creates a sheared copy. """
-		pass
+		""" Creates a histogram equalized copy. """
+
+		at = tm.AffineTransform(shear=0.5)
+		return tm.warp(data, inverse_map=at)

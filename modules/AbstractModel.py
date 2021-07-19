@@ -72,10 +72,10 @@ class AbstractModel(ABC):
 		random.seed(self.seed)
 		seed(self.seed)
 
-		self.weights_file = self.confs["model"]["weights"]
-		self.json_model = self.confs["model"]["model"]
-		self.tflite_model = self.confs["model"]["tfmodel"]
-		self.c_array_model = self.confs["model"]["model_c_array"]
+		self.weights_file_path = self.confs["model"]["weights"]
+		self.json_model_path = self.confs["model"]["model"]
+		self.tflite_model_path = self.confs["model"]["tfmodel"]
+		self.c_array_model_path = self.confs["model"]["model_c_array"]
 
 		self.helpers.logger.info("Model class initialization complete.")
 
@@ -110,8 +110,28 @@ class AbstractModel(ABC):
 		pass
 
 	@abstractmethod
-	def visualize_metrics(self):
-		""" Visualize the metrics. """
+	def plot_accuracy(self):
+		""" Plots the accuracy. """
+		pass
+
+	@abstractmethod
+	def plot_loss(self):
+		""" Plots the loss. """
+		pass
+
+	@abstractmethod
+	def plot_auc(self):
+		""" Plots the AUC curve. """
+		pass
+
+	@abstractmethod
+	def plot_precision(self):
+		""" Plots the precision. """
+		pass
+
+	@abstractmethod
+	def plot_recall(self):
+		""" Plots the recall. """
 		pass
 
 	@abstractmethod
@@ -144,5 +164,23 @@ class AbstractModel(ABC):
 		"""Local test mode
 
 		Loops through the test directory and classifies the images.
+		"""
+		pass
+
+	@abstractmethod
+	def http_reshape(self, img):
+		""" Reshapes an image sent via HTTP. """
+		pass
+
+	@abstractmethod
+	def http_request(self):
+		""" Sends image to the inference API endpoint. """
+		pass
+
+	@abstractmethod
+	def test_http(self):
+		"""Server test mode
+
+		Loops through the test directory and sends the images to the classification server.
 		"""
 		pass
