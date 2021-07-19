@@ -57,7 +57,6 @@ class classifier(AbstractClassifier):
 		self.model.prepare_network()
 		self.model.train()
 		self.model.evaluate()
-		self.mqtt.disconnect()
 
 	def set_model(self):
 		""" Loads the model class """
@@ -116,11 +115,11 @@ def main():
 		classifier.inference()
 
 	elif mode == "server":
-		classifier.set_model("CNN")
+		classifier.set_model()
 		classifier.server()
 
 	elif mode == "classify_http":
-		classifier.set_model("CNN")
+		classifier.set_model()
 		classifier.inference_http()
 
 

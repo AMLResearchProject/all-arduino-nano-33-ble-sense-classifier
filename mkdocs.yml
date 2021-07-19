@@ -1,2 +1,11 @@
 site_name: ALL Arduino Nano 33 BLE Sense Classifier
 site_url: https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier
+nav:
+    - Home: 'index.md'
+    - 'Installation':
+        - 'Ubuntu': 'installation/ubuntu.md'
+        - 'Arduino': 'installation/arduino.md'
+    - 'Usage':
+        - 'Notebooks': 'usage/notebooks.md'
+        - 'Python': 'usage/python.md'
+        - 'Arduino': 'usage/arduino.md'
