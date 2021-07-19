@@ -221,19 +221,19 @@ _________________________________________________________________
 ## Training Results
 Below are the training results for 28 epochs.
 
-<img src="../../img/plots/accuracy.png" alt="Adam Optimizer Results" />
+<img src="../img/plots/accuracy.png" alt="Adam Optimizer Results" />
 
 _Fig 2. Accuracy_
 
-<img src="../../img/plots/loss.png" alt="Loss" />
+<img src="../img/plots/loss.png" alt="Loss" />
 
 _Fig 3. Loss_
 
-<img src="../../img/plots/precision.png" alt="Precision" />
+<img src="../img/plots/precision.png" alt="Precision" />
 
 _Fig 4. Precision_
 
-<img src="../../img/plots/recall.png" alt="Recall" />
+<img src="../img/plots/recall.png" alt="Recall" />
 
 _Fig 5. Recall_
 
@@ -241,7 +241,7 @@ _Fig 5. Recall_
 
 _Fig 6. AUC_
 
-<img src="../../img/plots/confusion-matrix.png" alt="AUC" />
+<img src="../img/plots/confusion-matrix.png" alt="AUC" />
 
 _Fig 7. Confusion Matrix_
 
