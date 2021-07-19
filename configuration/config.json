@@ -1,7 +1,7 @@
 {
     "agent": {
         "cores": 8,
-        "server": "",
+        "ip": "",
         "port": 1234,
         "params": [
             "train",
@@ -16,7 +16,7 @@
         "labels": [0, 1],
         "rotations": 10,
         "seed": 2,
-        "split": 0.3,
+        "split": 0.255,
         "test": "model/data/test",
         "test_data": [
             "Im006_1.jpg",

@@ -6,19 +6,38 @@
 
 Welcome to the **ALL Arduino Nano 33 BLE Sense Classifier** official documentation.
 
-<font color='red'>DEVELOPER TO EXPLAIN/UPDATE THE PROJECT DETAILS</font>
+The **Acute Lypmhoblastic Leukemia Arduino Nano 33 BLE Sense Classifier** is an experiment to explore how low powered microcontrollers, specifically the Arduino Nano 33 BLE Sense, can be used to detect Acute Lymphoblastic Leukemia. The Arduino Nano 33 BLE Sense is the latest Arduino Board  which supports  Tensorflow Lite, allowing machine learning on Arduino.
+
+The motivation for this project was to explore how low powered devices such as Arduino can be used to detect Acute Lymphoblastic Leukemia. The project will be submitted to the Tensorflow For Microcontroller Challenge and the Eyes on Edge: tinyML Vision Challenge.
+
+&nbsp;
+
+#DISCLAIMER
+
+_This project should be used for research purposes only. The purpose of the project is to show the potential of Artificial Intelligence for medical support systems such as diagnostic systems._
+
+_Although the model is accurate and shows good results both on paper and in real world testing, it is trained on a small amount of data and needs to be trained on larger datasets to really evaluate it's accuracy._
+
+_Developers that have contributed to this repository have experience in using Artificial Intelligence for detecting certain types of cancer. They are not doctors, medical or cancer experts._
 
 &nbsp;
 
 # Installation
 
-Head over to the [Ubuntu Installation Guide](installation/ubuntu.md) for a complete installation guide.
+Use the following installation guides to set up your project:
+
+- [Ubuntu Installation Guide](installation/ubuntu.md)
+- [Arduino Installation Guide](installation/arduino.md)
 
 &nbsp;
 
 # Usage
 
-Head over to the [Ubuntu Usage Guide](usage/ubuntu.md) for a complete usage guide.
+Use the following usage guides to to train your classifier and use your classifier on Arduino:
+
+- [Python Usage Guide](usage/python.md)
+- [Jupyter Notebooks Usage Guide](usage/notebooks.md)
+- [Arduino Usage Guide](usage/arduino.md)
 
 &nbsp;
 

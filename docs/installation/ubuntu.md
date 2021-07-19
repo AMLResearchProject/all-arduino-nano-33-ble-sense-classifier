@@ -3,37 +3,34 @@
 ![ALL Arduino Nano 33 BLE Sense Classifier](../img/project-banner.jpg)
 
 # Introduction
-This guide will guide you through the installation process for the **ALL Arduino Nano 33 BLE Sense Classifier** Project.
-
-<font color='red'>DEVELOPER TO EXPLAIN/UPDATE THE PROJECT DETAILS</font>
-
-&nbsp;
-
-# Prerequisites
-You will need to ensure you have the following prerequisites installed and setup.
-
-<font color='red'>DEVELOPER TO EXPLAIN/UPDATE THE PREQUISITE DETAILS</font>
+This guide will take you through the installation process for the **ALL Arduino Nano 33 BLE Sense Classifier** trainer.
 
 &nbsp;
 
 # Operating System
-The ALL Arduino Nano 33 BLE Sense Classifier Jupyter Notebook supports the following operating system(s).
+This project supports the following operating system(s), but may work as described on other OS.
 
-<font color='red'>DEVELOPER TO LIST COMPATIBLE OPERATING SYSTEM(S). MUST BE TESTED BEFORE LISTING</font>
+- [Ubuntu 20.04](https://releases.ubuntu.com/20.04/)
 
 &nbsp;
 
 # Software
-The ALL Arduino Nano 33 BLE Sense Classifier Jupyter Notebook project uses the following libraries.
+This project uses the following libraries.
 
-<font color='red'>DEVELOPER TO LIST SOFTWARE LIBRARIES USED</font>
+- Conda
+- Intel® oneAPI AI Analytics Toolkit
+- Jupyter Notebooks
+- NBConda
+- Mlxtend
+- Pillow
+- Opencv
+- Scipy
+- Scikit Image
+- Scikit Learn
 
 &nbsp;
 
-# Installation
-You are now ready to install the ALL Arduino Nano 33 BLE Sense Classifier Project.
-
-## Clone the repository
+# Clone the repository
 
 Clone the [ALL Arduino Nano 33 BLE Sense Classifier](https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier " ALL Arduino Nano 33 BLE Sense Classifier") repository from the [Peter Moss Acute Myeloid & Lymphoblastic Leukemia AI Research Project](https://github.com/AMLResearchProject "Peter Moss Acute Myeloid & Lymphoblastic Leukemia AI Research Project") Github Organization.
 
@@ -57,7 +54,7 @@ Using the ls command in your home directory should show you the following.
 
 Navigate to the **ALL-Arduino-Nano-33-BLE-Sense-Classifier** directory, this is your project root directory for this tutorial.
 
-### Developer forks
+## Developer forks
 
 Developers from the Github community that would like to contribute to the development of this project should first create a fork, and clone that repository. For detailed information please view the [CONTRIBUTING](https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier/blob/master/CONTRIBUTING.md "CONTRIBUTING") guide. You should pull the latest code from the development branch.
 
@@ -67,20 +64,33 @@ Developers from the Github community that would like to contribute to the develo
 
 The **-b "1.0.0"** parameter ensures you get the code from the latest master branch. Before using the below command please check our latest master branch in the button at the top of the project README.
 
-## Installation script
-All software requirements are included in **scripts/install.sh**. You can run this file on your machine from the project root in terminal. Use the following command:
+&nbsp;
 
+# Installation
+You are now ready to install the ALL Arduino Nano 33 BLE Sense Classifier trainer. All software requirements are included in **scripts/install.sh**. You can run this file on your machine from the project root in terminal. Use the following command:
+
+``` bash
  sh scripts/install.sh
+```
 
-<font color='red'>DEVELOPER TO PROVIDE FULL INSTALLATION INSTRUCTIONS</font>
+**WARNING:** This script assumes you have not already installed the oneAPI Basekit.
+
+**WARNING:** This script assumes you have not already installed the oneAPI AI Analytics Toolkit.
+
+**WARNING:** This script assumes you have an Intel GPU.
+
+**WARNING:** This script assumes you have already installed the Intel GPU drivers.
+
+**HINT:** If any of the above are not relevant to you, please comment out the relevant sections below before running this installation script.
 
 &nbsp;
 
-## Configuration
+# Continue
 
-All configuration can be found in the **configuration/config.json** file.
+Choose one of the following usage guides to train your model:
 
-<font color='red'>DEVELOPER TO EDIT CONFIG FILE AND PROVIDE FULL DESCRIPTION OF CONFIGURATION</font>
+- [Python Usage Guide](../usage/python.md)
+- [Jupyter Notebooks Usage Guide](../usage/notebooks.md)
 
 &nbsp;
 

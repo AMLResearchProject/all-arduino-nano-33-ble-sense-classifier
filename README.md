@@ -3,9 +3,12 @@
 
 ![Acute Lymphoblastic Leukemia Arduino Nano 33 BLE Sense Classifier](assets/images/project-banner.jpg)
 
-[![CURRENT RELEASE](https://img.shields.io/badge/CURRENT%20RELEASE-0.1.0-blue.svg)](https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier/tree/0.1.0) [![UPCOMING RELEASE](https://img.shields.io/badge/CURRENT%20DEV%20BRANCH-1.0.0-blue.svg)](https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier/tree/1.0.0) [![Contributions Welcome!](https://img.shields.io/badge/Contributions-Welcome-lightgrey.svg)](CONTRIBUTING.md)  [![Issues](https://img.shields.io/badge/Issues-Welcome-lightgrey.svg)](issues)
+[![CURRENT RELEASE](https://img.shields.io/badge/CURRENT%20RELEASE-1.0.0-blue.svg)](https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier/tree/1.0.0) [![UPCOMING RELEASE](https://img.shields.io/badge/CURRENT%20DEV%20BRANCH-2.0.0-blue.svg)](https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier/tree/2.0.0) [![Contributions Welcome!](https://img.shields.io/badge/Contributions-Welcome-lightgrey.svg)](CONTRIBUTING.md)  [![Issues](https://img.shields.io/badge/Issues-Welcome-lightgrey.svg)](issues)
 
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/) [![Documentation Status](https://readthedocs.org/projects/all-arduino-nano-33-ble-sense-classifier/badge/?version=latest)](https://all-arduino-nano-33-ble-sense-classifier.readthedocs.io/en/latest/?badge=latest) [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5065/badge)](https://bestpractices.coreinfrastructure.org/projects/5065)
+
+![Unit Tests](https://img.shields.io/badge/Unit%20Tests-TODO-red)
+![Functional Tests](https://img.shields.io/badge/Functional%20Tests-TODO-red)
 
  [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-blue.svg)](LICENSE)
 
@@ -64,7 +67,7 @@ You need to be granted access to use the Acute Lymphoblastic Leukemia Image Data
 
 # Getting Started
 
-To get started follow the [getting started guide](docs/getting-started.md) to find out how to fork the repository.
+To get started follow the [official documentation](docs/index.md).
 
 &nbsp;
 
