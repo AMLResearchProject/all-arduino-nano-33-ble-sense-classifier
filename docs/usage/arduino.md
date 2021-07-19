@@ -36,8 +36,13 @@ Now you need to import your C array model into the Arduino project. On your deve
 
 &nbsp;
 
+# Test Data
+During training the test data was resized and moved to the **model/data/test/** directory. Before you can continue you need to upload these files to the SD card.
+
+&nbsp;
+
 # Run The Classifier
-Now it is time to run your classifier on the Arduino Nano 33 BLE Sense. Make sure you are connected to your Arduino and click on the **upload** button. Once the model is uploaded it will start to run, open your serial monitor and watch the output.
+Now it is time to run your classifier on the Arduino Nano 33 BLE Sense. Make sure you are connected to your Arduino and click on the **upload** button. Once the model is uploaded it will start to run, open your serial monitor and watch the output. You will see the onboard LED on the Arduino Nano 33 BLE Sense turn **red** if Acute Lymphoblastic Leukemia is detected and **green** if it is not.
 
 ``` bash
 19:22:40.139 -> Initialising SD card...
@@ -183,7 +188,7 @@ Now it is time to run your classifier on the Arduino Nano 33 BLE Sense. Make sur
 
 # Conclusion
 
-We see that our model that can correctly classify all twenty images only gets 11/20 when running on Arduino. There are some additional testing steps we can take which will be introduced in V2 that will allow us to test the Arduino model on our development machine to help identify where the bug is coming from. For now this is a good first attempt at building a classifier to  detect Acute Lymphoblastic Leukemia detection on Arduino. If you would like to view the ongoing issue in the Tensorflow Micro repository [click here](https://github.com/tensorflow/tflite-micro/issues/287), thanks to [Advait Jain](https://github.com/advaitjain) for the asistance with this issue.
+We see that our model that can correctly classify all twenty images only gets 11/20 when running on Arduino. There are some additional testing steps we can take which will be introduced in V2 that will allow us to test the Arduino model on our development machine to help identify where the bug is coming from. For now this is a good first attempt at building a classifier to  detect Acute Lymphoblastic Leukemia detection on Arduino. If you would like to view the ongoing issue in the Tensorflow Micro repository [click here](https://github.com/tensorflow/tflite-micro/issues/287) thanks to [Advait Jain](https://github.com/advaitjain) for the asistance with this issue.
 
 &nbsp;
 

@@ -221,29 +221,30 @@ _________________________________________________________________
 ## Training Results
 Below are the training results for 28 epochs.
 
-<img src="../img/plots/accuracy.png" alt="Adam Optimizer Results" />
+![Accuracy](../img/plots/accuracy.png)
 
-_Fig 2. Accuracy_
+_Fig 1. Accuracy_
 
-<img src="../img/plots/loss.png" alt="Loss" />
+![Loss](../img/plots/loss.png)
 
-_Fig 3. Loss_
+_Fig 2. Loss_
 
-<img src="../img/plots/precision.png" alt="Precision" />
+![Precision](../img/plots/precision.png)
 
-_Fig 4. Precision_
+_Fig 3. Precision_
 
-<img src="../img/plots/recall.png" alt="Recall" />
+![Recall](../img/plots/recall.png)
 
-_Fig 5. Recall_
+_Fig 4. Recall_
 
-<img src="../img/plots/auc.png" alt="AUC" />
+![AUC](../img/plots/auc.png)
 
-_Fig 6. AUC_
+_Fig 5. AUC_
 
-<img src="../img/plots/confusion-matrix.png" alt="AUC" />
+![Confusion Matrix](../img/plots/confusion-matrix.png)
 
-_Fig 7. Confusion Matrix_
+_Fig 6. Confusion Matrix_
+
 
 ``` bash
 2021-07-18 17:47:55,953 - Classifier - INFO - Metrics: loss 0.2371470034122467

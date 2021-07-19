@@ -3,7 +3,7 @@
 
 ![Acute Lymphoblastic Leukemia Arduino Nano 33 BLE Sense Classifier](assets/images/project-banner.jpg)
 
-[![CURRENT RELEASE](https://img.shields.io/badge/CURRENT%20RELEASE-1.0.0-blue.svg)](https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier/tree/1.0.0) [![UPCOMING RELEASE](https://img.shields.io/badge/CURRENT%20DEV%20BRANCH-2.0.0-blue.svg)](https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier/tree/2.0.0) [![Contributions Welcome!](https://img.shields.io/badge/Contributions-Welcome-lightgrey.svg)](CONTRIBUTING.md)  [![Issues](https://img.shields.io/badge/Issues-Welcome-lightgrey.svg)](issues)
+[![CURRENT RELEASE](https://img.shields.io/badge/CURRENT%20RELEASE-1.0.2-blue.svg)](https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier/tree/1.0.2) [![UPCOMING RELEASE](https://img.shields.io/badge/CURRENT%20DEV%20BRANCH-2.0.0-blue.svg)](https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier/tree/2.0.0) [![Contributions Welcome!](https://img.shields.io/badge/Contributions-Welcome-lightgrey.svg)](CONTRIBUTING.md)  [![Issues](https://img.shields.io/badge/Issues-Welcome-lightgrey.svg)](issues)
 
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/) [![Documentation Status](https://readthedocs.org/projects/all-arduino-nano-33-ble-sense-classifier/badge/?version=latest)](https://all-arduino-nano-33-ble-sense-classifier.readthedocs.io/en/latest/?badge=latest) [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5065/badge)](https://bestpractices.coreinfrastructure.org/projects/5065)
 
@@ -33,7 +33,13 @@
 
 # Introduction
 
-The **Acute Lypmhoblastic Leukemia Arduino Nano 33 BLE Sense Classifier** is an experiment to explore how low powered microcontrollers, specifically the Arduino Nano 33 BLE Sense, can be used to detect Acute Lymphoblastic Leukemia. The Arduino Nano 33 BLE Sense is the latest Arduino Board  which supports  Tensorflow Lite, allowing machine learning on Arduino.
+The **Acute Lypmhoblastic Leukemia Arduino Nano 33 BLE Sense Classifier** is an experiment to explore how low powered microcontrollers, specifically the Arduino Nano 33 BLE Sense, can be used to detect Acute Lymphoblastic Leukemia. The [Arduino Nano 33 BLE Sense](https://store.arduino.cc/arduino-nano-33-ble-sense) is the latest Arduino Board  which supports  Tensorflow Lite, allowing machine learning on Arduino.
+
+![Acute Lymphoblastic Leukemia Arduino Nano 33 BLE Sense Classifier](assets/images/all-arduino-nano-33-ble-classifier.gif)
+
+The model you will train is a 6 layer Convoluntional Neural Network trained using [Intel® Optimization for Tensorflow*](https://software.intel.com/content/www/us/en/develop/articles/intel-optimization-for-tensorflow-installation-guide.html) from the  [Intel® oneAPI AI Analytics Toolkit](https://software.intel.com/content/www/us/en/develop/tools/oneapi/ai-analytics-toolkit/download.html?operatingsystem=linux) to optimize and accelerate the training process.
+
+Checkout the [official video](https://www.youtube.com/watch?v=CDJEXdj2KZs) for the project.
 
 &nbsp;
 
@@ -54,13 +60,16 @@ The motivation for this project was to explore how low powered devices such as A
 &nbsp;
 
 # Acute Lymphoblastic Leukemia
-[Acute lymphoblastic leukemia (ALL)](https://www.leukemiaairesearch.com/research/leukemia), also known as Acute Lymphocytic Leukemia, is a cancer that affects the lymphoid blood cell lineage. It is the most common leukemia in children, and it accounts for 10-20% of acute leukemias in adults. The prognosis for both adult and especially childhood ALL has improved substantially since the 1970s. The 5- year survival is approximately 95% in children. In adults, the 5-year survival varies between 25% and 75%, with more favorable results in younger than in older patients.
+[Acute lymphoblastic leukemia (ALL)](https://www.leukemiaairesearch.com/research/leukemia), ), also known as acute lymphocytic leukemia, is a cancer that affects the lymphoid blood cell lineage. It is the most common leukemia in children, and it accounts for 10-20% of acute leukemias in adults. The prognosis for both adult and especially childhood ALL has improved substantially since the 1970s. The 5- year survival is approximately 95% in children. In adults, the 5-year survival varies between 25% and 75%, with more favorable results in younger than in older patients.
 
 For more information about Acute Lymphoblastic Leukemia  please visit our [Leukemia Information Page](https://www.leukemiaairesearch.com/research/leukemia)
 
 &nbsp;
 
 # ALL-IDB
+
+![Acute Lymphoblastic Leukemia Arduino Nano 33 BLE Sense Classifier](assets/images/all-idb.jpg)
+
 You need to be granted access to use the Acute Lymphoblastic Leukemia Image Database for Image Processing dataset. You can find the application form and information about getting access to the dataset on [this page](https://homes.di.unimi.it/scotti/all/#download) as well as information on how to contribute back to the project [here](https://homes.di.unimi.it/scotti/all/results.php). If you are not able to obtain a copy of the dataset please feel free to try this tutorial on your own dataset, we would be very happy to find additional AML & ALL datasets.
 
 &nbsp;

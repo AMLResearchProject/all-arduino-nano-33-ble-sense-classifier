@@ -24,17 +24,17 @@ The following hardware is required for this project:
 # Software
 The following Arduino software libraries are used with this project:
 
-- [Arduino Tensorflow Lite](https://github.com/tensorflow/tflite-micro)
+- [Arduino IDE](https://www.arduino.cc/en/software)
+- [Arduino Tensorflow Lite For Microcontrollers](https://github.com/tensorflow/tflite-micro)
 - [JpegDecoder](https://github.com/Bodmer/JPEGDecoder)
 
 &nbsp;
 
 # Prerequisites
-You will need to ensure you have installed the following software and followed the provided guides:
+You will need to ensure you have followed the provided guides below:
 
 - [Ubuntu Installation Guide](../installation/ubuntu.md)
 - [Python Usage Guide](../usage/python.md) or [Jupyter Notebooks Usage Guide](../usage/notebooks.md)
-- [Arduino IDE](https://www.arduino.cc/en/software)
 - [Getting started with the Arduino Nano 33 BLE Sense](https://www.arduino.cc/en/Guide/NANO33BLESense)
 - [Why doesn't the 5V pin work in the Arduino Nano 33 BLE boards?](https://support.arduino.cc/hc/en-us/articles/360014779679-Why-doesn-t-the-5V-pin-work-in-the-Arduino-Nano-33-BLE-boards-)
 
@@ -44,7 +44,18 @@ You will need to ensure you have installed the following software and followed t
 
 ![ALL Arduino Nano 33 BLE Sense Classifier](../img/arduino-nano-33-ble-sense-sd_bb.jpg)
 
-Follow the diagram above to connect your SD card reader to the Arduino Nano 33 BLE Sense.
+Follow the diagram above to connect your SD card reader to the Arduino Nano 33 BLE Sense. Remember you need to follow the steps in  [Why doesn't the 5V pin work in the Arduino Nano 33 BLE boards?](https://support.arduino.cc/hc/en-us/articles/360014779679-Why-doesn-t-the-5V-pin-work-in-the-Arduino-Nano-33-BLE-boards-) to enable 5V on the Arduino Nano BLE Sense.
+
+ Below is a pin guide to help.
+
+| Arduino Pin | SD Card Pin |
+| ---------- | ---------- |
+| D10 | CS |
+| D11 | MOSI |
+| D12 | MISO |
+| D13 | SCK |
+| 5v | VCC |
+| GND | GND |
 
 &nbsp;
 
