@@ -4,11 +4,7 @@
 
 # Welcome
 
-Welcome to the **ALL Arduino Nano 33 BLE Sense Classifier** official documentation.
-
-The **Acute Lypmhoblastic Leukemia Arduino Nano 33 BLE Sense Classifier** is an experiment to explore how low powered microcontrollers, specifically the Arduino Nano 33 BLE Sense, can be used to detect Acute Lymphoblastic Leukemia. The Arduino Nano 33 BLE Sense is the latest Arduino Board  which supports  Tensorflow Lite, allowing machine learning on Arduino.
-
-The motivation for this project was to explore how low powered devices such as Arduino can be used to detect Acute Lymphoblastic Leukemia. The project will be submitted to the Tensorflow For Microcontroller Challenge and the Eyes on Edge: tinyML Vision Challenge.
+Welcome to the [ALL Arduino Nano 33 BLE Sense Classifier](https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier) official documentation.
 
 &nbsp;
 
@@ -24,7 +20,7 @@ _Developers that have contributed to this repository have experience in using Ar
 
 # Installation
 
-Use the following installation guides to set up your project:
+Use the following installation guides to set up your project.:
 
 - [Ubuntu Installation Guide](installation/ubuntu.md)
 - [Arduino Installation Guide](installation/arduino.md)

@@ -40,7 +40,7 @@ To clone the repository and install the project, make sure you have Git installe
  git clone https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier.git
 ```
 
-This will clone the ALL Arduino Nano 33 BLE Sense Classifier repository and move the cloned repository to the agents directory in the HIAS project (components/agents/mqtt/).
+This will clone the ALL Arduino Nano 33 BLE Sense Classifier repository.
 
 ``` bash
  ls
@@ -59,10 +59,10 @@ Navigate to the **ALL-Arduino-Nano-33-BLE-Sense-Classifier** directory, this is 
 Developers from the Github community that would like to contribute to the development of this project should first create a fork, and clone that repository. For detailed information please view the [CONTRIBUTING](https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier/blob/master/CONTRIBUTING.md "CONTRIBUTING") guide. You should pull the latest code from the development branch.
 
 ``` bash
- git clone -b "1.0.0" https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier.git
+ git clone -b "2.0.0" https://github.com/AMLResearchProject/ALL-Arduino-Nano-33-BLE-Sense-Classifier.git
 ```
 
-The **-b "1.0.0"** parameter ensures you get the code from the latest master branch. Before using the below command please check our latest master branch in the button at the top of the project README.
+The **-b "2.0.0"** parameter ensures you get the code from the latest master branch. Before using the below command please check our latest master branch in the button at the top of the project README.
 
 &nbsp;
 
